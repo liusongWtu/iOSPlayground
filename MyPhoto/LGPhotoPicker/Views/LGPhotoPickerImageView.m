@@ -30,7 +30,7 @@
         UIView *maskView = [[UIView alloc] init];
         maskView.frame = self.bounds;
         maskView.backgroundColor = [UIColor whiteColor];
-        maskView.alpha = 0.5;
+        maskView.alpha = 0.7;
         [self addSubview:maskView];
         self.maskView = maskView;
     }
@@ -51,7 +51,7 @@
 - (UIImageView *)tickImageView{
     if (!_tickImageView) {
         UIImageView *tickImageView = [[UIImageView alloc] init];
-        tickImageView.frame = CGRectMake(self.bounds.size.width - 28, 5, 21, 21);
+        tickImageView.frame = CGRectMake(self.bounds.size.width - 28, self.bounds.size.height - 21-5, 21, 21);
         tickImageView.image = [UIImage imageNamed:@"checkbox_pic_non"];
         //        tickImageView.hidden = YES;
         [self addSubview:tickImageView];
@@ -72,8 +72,11 @@
     if (!maskViewFlag){
         // hidden
         [self.tickImageView setImage:[UIImage imageNamed:@"checkbox_pic_non"]];
+        self.maskViewAlpha=0;
     }else{
         [self.tickImageView setImage:[UIImage imageNamed:@"checkbox_pic"]];
+        self.maskViewAlpha=0.7;
+        [self bringSubviewToFront:self.tickImageView];
     }
     
     //    self.maskView.hidden = !maskViewFlag;
