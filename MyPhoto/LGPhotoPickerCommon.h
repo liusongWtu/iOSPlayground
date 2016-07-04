@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, LGShowImageType) {
 };
 
 // maxCount的默认值，不设置maxCount的时候有效
-static NSInteger const KPhotoShowMaxCount = 9;
+static NSInteger const KPhotoShowMaxCount = INT_MAX;
 
 // ScrollView 滑动的间距
 static CGFloat const LGPickerColletionViewPadding = 20;

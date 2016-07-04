@@ -40,7 +40,7 @@
 - (void)presentPhotoPickerViewControllerWithStyle:(LGShowImageType)style {
     LGPhotoPickerViewController *pickerVc = [[LGPhotoPickerViewController alloc] initWithShowType:style];
     pickerVc.status = PickerViewShowStatusCameraRoll;
-    pickerVc.maxCount = 9;   // 最多能选9张图片
+//    pickerVc.maxCount = 9;   // 最多能选9张图片,默认为INT_MAX
     pickerVc.delegate = self;
     self.showType = style;
     [pickerVc showPickerVc:self];
