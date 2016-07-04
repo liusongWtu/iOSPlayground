@@ -134,9 +134,9 @@
         NSUInteger maxCount = (self.maxCount <= 0) ? KPhotoShowMaxCount :  self.maxCount;
         if (self.selectAssets.count >= maxCount) {
             NSString *format = [NSString stringWithFormat:@"最多只能选择%zd张图片",maxCount];
-            if (maxCount == 0) {
-                format = [NSString stringWithFormat:@"您最多只能选择9张图片"];
-            }
+//            if (maxCount == 0) {
+//                format = [NSString stringWithFormat:@"您最多只能选择9张图片"];
+//            }
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提醒" message:format delegate:self cancelButtonTitle:nil otherButtonTitles:@"好的", nil];
             [alertView show];
             return;
