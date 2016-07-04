@@ -143,7 +143,7 @@ typedef NS_ENUM(NSInteger, DraggingDirect) {
     
     [self setupCollectionView];
     [self setupTopView];
-    //
+    //取消底部工具栏
 //    [self setupXGToolbar];
 }
 
