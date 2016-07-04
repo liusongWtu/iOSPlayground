@@ -156,6 +156,7 @@
 		E43F10751D2A13FE0086E398 /* X@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X@2x.png"; sourceTree = "<group>"; };
 		E43F10761D2A13FE0086E398 /* xiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiang.png; sourceTree = "<group>"; };
 		E43F10771D2A13FE0086E398 /* xiang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xiang@2x.png"; sourceTree = "<group>"; };
+		E43F108D1D2A6D8D0086E398 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +348,7 @@
 		E43F103E1D2A0A3A0086E398 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E43F108D1D2A6D8D0086E398 /* Header.h */,
 				E43F103F1D2A0A3A0086E398 /* LGPhotoPickerCollectionView.h */,
 				E43F10401D2A0A3A0086E398 /* LGPhotoPickerCollectionView.m */,
 				E43F10411D2A0A3A0086E398 /* LGPhotoPickerCollectionViewCell.h */,
