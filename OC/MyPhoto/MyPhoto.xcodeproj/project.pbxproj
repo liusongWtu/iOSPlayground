@@ -167,6 +167,7 @@
 		E43F10921D2A749F0086E398 /* album_select_null_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_null_icon@2x.png"; sourceTree = "<group>"; };
 		E43F10931D2A749F0086E398 /* album_select_null_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_null_icon@3x.png"; sourceTree = "<group>"; };
 		E43F10981D2AC54A0086E398 /* TestFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFile.h; sourceTree = "<group>"; };
+		E43F10991D2ACEF60086E398 /* test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test1.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +236,7 @@
 				E42EB40B1D265AB700586022 /* Info.plist */,
 				E42EB3FA1D265AB700586022 /* Supporting Files */,
 				E43F10981D2AC54A0086E398 /* TestFile.h */,
+				E43F10991D2ACEF60086E398 /* test1.h */,
 			);
 			path = MyPhoto;
 			sourceTree = "<group>";
