@@ -29,8 +29,8 @@
         self.selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.selectBtn setFrame:CGRectMake(SCREEN_WIDTH - 40 - 15, 20, 40, 40)];
         [self.selectBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 8, 8, 0)];
-        [self.selectBtn setImage:GetImage(@"checkbox_pic_non2.png") forState:UIControlStateNormal];
-        [self.selectBtn setImage:GetImage(@"checkbox_pic2.png") forState:UIControlStateSelected];
+        [self.selectBtn setImage:GetImage(@"album_select_null_icon.png") forState:UIControlStateNormal];
+        [self.selectBtn setImage:GetImage(@"album_select_icon.png") forState:UIControlStateSelected];
         [self addSubview:self.selectBtn];
     }
     return self;

@@ -52,7 +52,7 @@
     if (!_tickImageView) {
         UIImageView *tickImageView = [[UIImageView alloc] init];
         tickImageView.frame = CGRectMake(self.bounds.size.width - 28, self.bounds.size.height - 21-5, 21, 21);
-        tickImageView.image = [UIImage imageNamed:@"checkbox_pic_non"];
+        tickImageView.image = [UIImage imageNamed:@"album_select_null_icon"];
         //        tickImageView.hidden = YES;
         [self addSubview:tickImageView];
         self.tickImageView = tickImageView;
@@ -71,10 +71,10 @@
     
     if (!maskViewFlag){
         // hidden
-        [self.tickImageView setImage:[UIImage imageNamed:@"checkbox_pic_non"]];
+        [self.tickImageView setImage:[UIImage imageNamed:@"album_select_null_icon"]];
         self.maskViewAlpha=0;
     }else{
-        [self.tickImageView setImage:[UIImage imageNamed:@"checkbox_pic"]];
+        [self.tickImageView setImage:[UIImage imageNamed:@"album_select_icon"]];
         self.maskViewAlpha=0.7;
         [self bringSubviewToFront:self.tickImageView];
     }

@@ -145,7 +145,7 @@
 		E43F10661D2A13FE0086E398 /* broswerPic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = broswerPic2.jpg; sourceTree = "<group>"; };
 		E43F10671D2A13FE0086E398 /* broswerPic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = broswerPic3.jpg; sourceTree = "<group>"; };
 		E43F10681D2A13FE0086E398 /* broswerPic4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = broswerPic4.jpg; sourceTree = "<group>"; };
-		E43F10691D2A13FE0086E398 /* btn_back_imagePicker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back_imagePicker@2x.png"; sourceTree = "<group>"; };
+		E43F10691D2A13FE0086E398 /* btn_back_imagePicker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_back_imagePicker@2x.png"; path = "../Images/btn_back_imagePicker@2x.png"; sourceTree = "<group>"; };
 		E43F106A1D2A13FE0086E398 /* checkbox_pic2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox_pic2@2x.png"; sourceTree = "<group>"; };
 		E43F106B1D2A13FE0086E398 /* checkbox_pic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox_pic@2x.png"; sourceTree = "<group>"; };
 		E43F106C1D2A13FE0086E398 /* checkbox_pic_non2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox_pic_non2@2x.png"; sourceTree = "<group>"; };
@@ -160,8 +160,6 @@
 		E43F10751D2A13FE0086E398 /* X@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X@2x.png"; sourceTree = "<group>"; };
 		E43F10761D2A13FE0086E398 /* xiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiang.png; sourceTree = "<group>"; };
 		E43F10771D2A13FE0086E398 /* xiang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xiang@2x.png"; sourceTree = "<group>"; };
-		E43F108D1D2A6D8D0086E398 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		E43F108E1D2A6E1D0086E398 /* Header1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header1.h; sourceTree = "<group>"; };
 		E43F10901D2A749F0086E398 /* album_select_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_icon@2x.png"; sourceTree = "<group>"; };
 		E43F10911D2A749F0086E398 /* album_select_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_icon@3x.png"; sourceTree = "<group>"; };
 		E43F10921D2A749F0086E398 /* album_select_null_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_null_icon@2x.png"; sourceTree = "<group>"; };
@@ -358,7 +356,6 @@
 		E43F103E1D2A0A3A0086E398 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E43F108D1D2A6D8D0086E398 /* Header.h */,
 				E43F103F1D2A0A3A0086E398 /* LGPhotoPickerCollectionView.h */,
 				E43F10401D2A0A3A0086E398 /* LGPhotoPickerCollectionView.m */,
 				E43F10411D2A0A3A0086E398 /* LGPhotoPickerCollectionViewCell.h */,
@@ -369,7 +366,6 @@
 				E43F10461D2A0A3A0086E398 /* LGPhotoPickerGroupTableViewCell.m */,
 				E43F10471D2A0A3A0086E398 /* LGPhotoPickerImageView.h */,
 				E43F10481D2A0A3A0086E398 /* LGPhotoPickerImageView.m */,
-				E43F108E1D2A6E1D0086E398 /* Header1.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -399,7 +395,6 @@
 				E43F10661D2A13FE0086E398 /* broswerPic2.jpg */,
 				E43F10671D2A13FE0086E398 /* broswerPic3.jpg */,
 				E43F10681D2A13FE0086E398 /* broswerPic4.jpg */,
-				E43F10691D2A13FE0086E398 /* btn_back_imagePicker@2x.png */,
 				E43F106A1D2A13FE0086E398 /* checkbox_pic2@2x.png */,
 				E43F106B1D2A13FE0086E398 /* checkbox_pic@2x.png */,
 				E43F106C1D2A13FE0086E398 /* checkbox_pic_non2@2x.png */,
@@ -423,6 +418,7 @@
 			children = (
 				E43F10901D2A749F0086E398 /* album_select_icon@2x.png */,
 				E43F10911D2A749F0086E398 /* album_select_icon@3x.png */,
+				E43F10691D2A13FE0086E398 /* btn_back_imagePicker@2x.png */,
 				E43F10921D2A749F0086E398 /* album_select_null_icon@2x.png */,
 				E43F10931D2A749F0086E398 /* album_select_null_icon@3x.png */,
 			);
