@@ -12,6 +12,8 @@
 #import "LGPhotoPickerGroup.h"
 #import "LGPhotoPickerCollectionViewCell.h"
 #import "LGPhotoPickerFooterCollectionReusableView.h"
+#import "LSDynamicScrollView.h"
+
 
 static CGFloat CELL_ROW = 4;
 static CGFloat CELL_MARGIN = 2;
@@ -30,6 +32,9 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
 @property (nonatomic , weak) UILabel *makeView;
 @property (nonatomic , strong) UIButton *sendBtn;
 @property (nonatomic , strong) UIButton *previewBtn;
+@property (nonatomic,strong)UILabel *selectedTipsLabel;
+@property (nonatomic, strong) LSDynamicScrollView *selectedImagesScrollView;
+@property (nonatomic, strong) UIView *bottomBar;
 @property (nonatomic , weak) UIToolbar *toolBar;
 @property (assign,nonatomic) NSUInteger privateTempMaxCount;
 @property (nonatomic , strong) NSMutableArray *assets;
@@ -99,20 +104,45 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
     return _sendBtn;
 }
 
-- (UIButton *)previewBtn
-{
-    if (!_previewBtn) {
-        UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [leftBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [leftBtn setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
-        leftBtn.enabled = YES;
-        leftBtn.titleLabel.font = [UIFont systemFontOfSize:17];
-        leftBtn.frame = CGRectMake(0, 0, 45, 45);
-        [leftBtn setTitle:@"预览" forState:UIControlStateNormal];
-        [leftBtn addTarget:self action:@selector(previewBtnTouched) forControlEvents:UIControlEventTouchUpInside];
-        self.previewBtn = leftBtn;
+//- (UIButton *)previewBtn
+//{
+//    if (!_previewBtn) {
+//        UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//        [leftBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//        [leftBtn setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+//        leftBtn.enabled = YES;
+//        leftBtn.titleLabel.font = [UIFont systemFontOfSize:17];
+//        leftBtn.frame = CGRectMake(0, 0, 45, 45);
+//        [leftBtn setTitle:@"预览" forState:UIControlStateNormal];
+//        [leftBtn addTarget:self action:@selector(previewBtnTouched) forControlEvents:UIControlEventTouchUpInside];
+//        self.previewBtn = leftBtn;
+//    }
+//    return _previewBtn;
+//}
+
+-(UILabel*)selectedTipsLabel{
+    if (!_selectedTipsLabel) {
+        UILabel *leftLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
+        leftLabel.textColor=[UIColor whiteColor];
+        leftLabel.font=[UIFont systemFontOfSize:15];
+        leftLabel.text=@"已选择0张照片";
+        _selectedTipsLabel=leftLabel;
     }
-    return _previewBtn;
+    return _selectedTipsLabel;
+}
+
+-(LSDynamicScrollView*)selectedImagesScrollView{
+    if (!_selectedImagesScrollView) {
+        NSArray *images=@[@"broswerPic0.jpg",@"broswerPic1.jpg"];
+        _selectedImagesScrollView = [[LSDynamicScrollView alloc] initWithFrame:CGRectMake(0, (SCREEN_HEIGHT - 60)/2, SCREEN_WIDTH, 60) withImages:[images mutableCopy]];
+        _selectedImagesScrollView.deleteImageBlock=^(int index){
+            NSLog(@"delete:%d",index);
+        };
+        _selectedImagesScrollView.clickImageBlock=^(int index){
+            NSLog(@"click:%d",index);
+        };
+    }
+    return _selectedImagesScrollView;
 }
 
 - (void)previewBtnTouched
@@ -214,7 +244,7 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
         
         collectionView.contentInset = UIEdgeInsetsMake(5, 0,TOOLBAR_HEIGHT, 0);
         collectionView.collectionViewDelegate = self;
-        [self.view insertSubview:_collectionView = collectionView belowSubview:self.toolBar];
+        [self.view insertSubview:_collectionView = collectionView belowSubview:self.bottomBar];
         
         NSDictionary *views = NSDictionaryOfVariableBindings(collectionView);
         
@@ -336,27 +366,50 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
 }
 
 #pragma mark -初始化底部ToorBar
+
 - (void) setupToorBar{
-    UIToolbar *toorBar = [[UIToolbar alloc] init];
-    toorBar.translatesAutoresizingMaskIntoConstraints = NO;
-    toorBar.barStyle = UIBarStyleBlackTranslucent;
-    [self.view addSubview:toorBar];
-    self.toolBar = toorBar;
+    UIView *bottomBar=[[UIView alloc] init];
+    bottomBar.translatesAutoresizingMaskIntoConstraints = NO;
+    bottomBar.backgroundColor=kBottomBarColor;
+    [self.view addSubview:bottomBar];
+    self.bottomBar=bottomBar;
     
-    NSDictionary *views = NSDictionaryOfVariableBindings(toorBar);
-    NSString *widthVfl =  @"H:|-0-[toorBar]-0-|";
-    NSString *heightVfl = @"V:[toorBar(44)]-0-|";
+    NSDictionary *views = NSDictionaryOfVariableBindings(bottomBar);
+    NSString *widthVfl =  @"H:|-0-[bottomBar]-0-|";
+    NSString *heightVfl = @"V:[bottomBar(80)]-0-|";
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:widthVfl options:0 metrics:0 views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:heightVfl options:0 metrics:0 views:views]];
     
-    // 左视图 中间距 右视图
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:self.previewBtn];
-    UIBarButtonItem *fiexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:self.sendBtn];
-    
-    toorBar.items = @[leftItem,fiexItem,rightItem];
+
     
 }
+
+//- (void) setupToorBar{
+//    UIToolbar *toorBar = [[UIToolbar alloc] init];
+//    toorBar.translatesAutoresizingMaskIntoConstraints = NO;
+//    toorBar.barStyle = UIBarStyleBlackTranslucent;
+//    [self.view addSubview:toorBar];
+//    self.toolBar = toorBar;
+//    
+//    NSDictionary *views = NSDictionaryOfVariableBindings(toorBar);
+//    NSString *widthVfl =  @"H:|-0-[toorBar]-0-|";
+//    NSString *heightVfl = @"V:[toorBar(80)]-0-|";
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:widthVfl options:0 metrics:0 views:views]];
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:heightVfl options:0 metrics:0 views:views]];
+//    
+//    // 左视图 中间距 右视图
+//    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:self.previewBtn];
+//    
+//    UIBarButtonItem *fiexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+//    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:self.sendBtn];
+//    
+//    toorBar.items = @[leftItem,fiexItem,rightItem];
+//    
+//}
+
+
+
+
 
 #pragma mark - setter
 -(void)setMaxCount:(NSInteger)maxCount{

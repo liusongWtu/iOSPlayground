@@ -56,7 +56,7 @@
 - (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout{
     if (self = [super initWithFrame:frame collectionViewLayout:layout]) {
         
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = kPhotoPickerCollectionViewBgColor;
         self.dataSource = self;
         self.delegate = self;
         _selectAssets = [NSMutableArray array];
@@ -186,17 +186,24 @@
 }
 
 #pragma mark 底部View
+//隐藏底部
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
+//    UICollectionReusableView *view=nil;
     LGPhotoPickerFooterCollectionReusableView *reusableView = nil;
     if (kind == UICollectionElementKindSectionFooter) {
         LGPhotoPickerFooterCollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FooterView" forIndexPath:indexPath];
         footerView.count = self.dataArray.count;
         reusableView = footerView;
         self.footerView = footerView;
+        
+//        view=[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FooterView" forIndexPath:indexPath];
+//        view.frame=CGRectZero;
     }else{
         
     }
+    //隐藏底部
+    reusableView.hidden=YES;
     return reusableView;
 }
 

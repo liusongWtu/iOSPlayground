@@ -20,6 +20,12 @@
 #define IOS8_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
 #define IOS9_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"9.0"] != NSOrderedAscending )
 
+#define RGB(R,G,B)		[UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
+#define RGBA(R,G,B,A)   [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:A/255.0f]
+
+#define kBottomBarColor RGB(19,23,23)   //图片选择底部颜色
+#define kPhotoPickerCollectionViewBgColor RGB(33,38,37) //图片选择列表背景颜色
+
 // 点击销毁的block
 typedef void(^ZLPickerBrowserViewControllerTapDisMissBlock)(NSInteger);
 
@@ -52,5 +58,6 @@ static NSString *PICKER_TAKE_DONE = @"PICKER_TAKE_DONE";
 static NSString *PICKER_TAKE_PHOTO = @"PICKER_TAKE_PHOTO";
 
 static NSString *PICKER_PowerBrowserPhotoLibirayText = @"您屏蔽了选择相册的权限，开启请去系统设置->隐私->我的App来打开权限";
+
 
 #endif

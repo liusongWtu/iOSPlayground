@@ -60,6 +60,9 @@
 		E43F10951D2A749F0086E398 /* album_select_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10911D2A749F0086E398 /* album_select_icon@3x.png */; };
 		E43F10961D2A749F0086E398 /* album_select_null_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10921D2A749F0086E398 /* album_select_null_icon@2x.png */; };
 		E43F10971D2A749F0086E398 /* album_select_null_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10931D2A749F0086E398 /* album_select_null_icon@3x.png */; };
+		E43F10B31D2B9C780086E398 /* LSDynamicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10B21D2B9C780086E398 /* LSDynamicScrollView.m */; };
+		E43F10B61D2BAD0B0086E398 /* album_select_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10B41D2BAD0B0086E398 /* album_select_cancel@2x.png */; };
+		E43F10B71D2BAD0B0086E398 /* album_select_cancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10B51D2BAD0B0086E398 /* album_select_cancel@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +167,10 @@
 		E43F10911D2A749F0086E398 /* album_select_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_icon@3x.png"; sourceTree = "<group>"; };
 		E43F10921D2A749F0086E398 /* album_select_null_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_null_icon@2x.png"; sourceTree = "<group>"; };
 		E43F10931D2A749F0086E398 /* album_select_null_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_null_icon@3x.png"; sourceTree = "<group>"; };
+		E43F10B11D2B9C780086E398 /* LSDynamicScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDynamicScrollView.h; sourceTree = "<group>"; };
+		E43F10B21D2B9C780086E398 /* LSDynamicScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDynamicScrollView.m; sourceTree = "<group>"; };
+		E43F10B41D2BAD0B0086E398 /* album_select_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_cancel@2x.png"; sourceTree = "<group>"; };
+		E43F10B51D2BAD0B0086E398 /* album_select_cancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_cancel@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +373,8 @@
 				E43F10461D2A0A3A0086E398 /* LGPhotoPickerGroupTableViewCell.m */,
 				E43F10471D2A0A3A0086E398 /* LGPhotoPickerImageView.h */,
 				E43F10481D2A0A3A0086E398 /* LGPhotoPickerImageView.m */,
+				E43F10B11D2B9C780086E398 /* LSDynamicScrollView.h */,
+				E43F10B21D2B9C780086E398 /* LSDynamicScrollView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -418,6 +427,8 @@
 			children = (
 				E43F10901D2A749F0086E398 /* album_select_icon@2x.png */,
 				E43F10911D2A749F0086E398 /* album_select_icon@3x.png */,
+				E43F10B41D2BAD0B0086E398 /* album_select_cancel@2x.png */,
+				E43F10B51D2BAD0B0086E398 /* album_select_cancel@3x.png */,
 				E43F10691D2A13FE0086E398 /* btn_back_imagePicker@2x.png */,
 				E43F10921D2A749F0086E398 /* album_select_null_icon@2x.png */,
 				E43F10931D2A749F0086E398 /* album_select_null_icon@3x.png */,
@@ -543,7 +554,9 @@
 				E42EB40A1D265AB700586022 /* LaunchScreen.storyboard in Resources */,
 				E43F10821D2A13FE0086E398 /* icon_pic_break@2x.png in Resources */,
 				E43F108B1D2A13FE0086E398 /* xiang@2x.png in Resources */,
+				E43F10B71D2BAD0B0086E398 /* album_select_cancel@3x.png in Resources */,
 				E43F10841D2A13FE0086E398 /* paizhao.png in Resources */,
+				E43F10B61D2BAD0B0086E398 /* album_select_cancel@2x.png in Resources */,
 				E42EB4071D265AB700586022 /* Assets.xcassets in Resources */,
 				E43F10951D2A749F0086E398 /* album_select_icon@3x.png in Resources */,
 				E43F10851D2A13FE0086E398 /* paizhao@2x.png in Resources */,
@@ -601,6 +614,7 @@
 				E43F10511D2A0A3A0086E398 /* LGPhotoAssets.m in Sources */,
 				E43F10621D2A0AB40086E398 /* UIView+Layout.m in Sources */,
 				E43F10501D2A0A3A0086E398 /* LGPhotoPickerCustomToolBarView.m in Sources */,
+				E43F10B31D2B9C780086E398 /* LSDynamicScrollView.m in Sources */,
 				E43F10591D2A0A3A0086E398 /* LGPhotoPickerFooterCollectionReusableView.m in Sources */,
 				E43F104E1D2A0A3A0086E398 /* LGPhotoPickerBrowserPhotoScrollView.m in Sources */,
 			);
