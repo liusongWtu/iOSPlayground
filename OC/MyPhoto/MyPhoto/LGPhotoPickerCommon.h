@@ -25,6 +25,7 @@
 
 #define kBottomBarColor RGB(19,23,23)   //图片选择底部颜色
 #define kPhotoPickerCollectionViewBgColor RGB(33,38,37) //图片选择列表背景颜色
+#define kSelectedImageTipsColor RGB(132,137,135)    //已选择图片提示字体颜色
 
 // 点击销毁的block
 typedef void(^ZLPickerBrowserViewControllerTapDisMissBlock)(NSInteger);

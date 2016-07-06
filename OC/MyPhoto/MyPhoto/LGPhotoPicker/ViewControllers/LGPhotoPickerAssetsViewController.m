@@ -92,12 +92,13 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
     if (!_sendBtn) {
         UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [rightBtn setTitleColor:[UIColor colorWithRed:0x45 green:0x9a blue:0x00 alpha:1] forState:UIControlStateNormal];
-        [rightBtn setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+        [rightBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateDisabled];
         rightBtn.enabled = YES;
+//        rightBtn.backgroundColor=[UIColor blueColor];
         rightBtn.titleLabel.font = [UIFont systemFontOfSize:17];
         rightBtn.frame = CGRectMake(0, 0, 60, 45);
-        NSString *title = [NSString stringWithFormat:@"发送(%d)",0];
-        [rightBtn setTitle:title forState:UIControlStateNormal];
+//        NSString *title = [NSString stringWithFormat:@"发送(%d)",0];
+        [rightBtn setTitle:@"下一步" forState:UIControlStateNormal];
         [rightBtn addTarget:self action:@selector(sendBtnTouched) forControlEvents:UIControlEventTouchUpInside];
         self.sendBtn = rightBtn;
     }
@@ -123,8 +124,8 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
 -(UILabel*)selectedTipsLabel{
     if (!_selectedTipsLabel) {
         UILabel *leftLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
-        leftLabel.textColor=[UIColor whiteColor];
-        leftLabel.font=[UIFont systemFontOfSize:15];
+        leftLabel.textColor=kSelectedImageTipsColor;
+        leftLabel.font=[UIFont systemFontOfSize:13];
         leftLabel.text=@"已选择0张照片";
         _selectedTipsLabel=leftLabel;
     }
@@ -133,8 +134,8 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
 
 -(LSDynamicScrollView*)selectedImagesScrollView{
     if (!_selectedImagesScrollView) {
-        NSArray *images=@[@"broswerPic0.jpg",@"broswerPic1.jpg"];
-        _selectedImagesScrollView = [[LSDynamicScrollView alloc] initWithFrame:CGRectMake(0, (SCREEN_HEIGHT - 60)/2, SCREEN_WIDTH, 60) withImages:[images mutableCopy]];
+        NSArray *images=@[@"broswerPic0.jpg",@"broswerPic1.jpg",@"broswerPic0.jpg",@"broswerPic1.jpg",@"broswerPic0.jpg",@"broswerPic1.jpg",@"broswerPic0.jpg",@"broswerPic1.jpg"];
+        _selectedImagesScrollView = [[LSDynamicScrollView alloc] initWithFrame:CGRectMake(0, (SCREEN_HEIGHT - 60)/2, SCREEN_WIDTH-10, 60) withImages:[images mutableCopy]];
         _selectedImagesScrollView.deleteImageBlock=^(int index){
             NSLog(@"delete:%d",index);
         };
@@ -373,15 +374,30 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
     bottomBar.backgroundColor=kBottomBarColor;
     [self.view addSubview:bottomBar];
     self.bottomBar=bottomBar;
+    [bottomBar addSubview:self.selectedTipsLabel];
+    [bottomBar addSubview:self.sendBtn];
+    [bottomBar addSubview:self.selectedImagesScrollView];
     
-    NSDictionary *views = NSDictionaryOfVariableBindings(bottomBar);
+    NSDictionary *views = NSDictionaryOfVariableBindings(bottomBar,_selectedTipsLabel,_sendBtn,_selectedImagesScrollView);
+    _sendBtn.translatesAutoresizingMaskIntoConstraints=NO;
+    _selectedTipsLabel.translatesAutoresizingMaskIntoConstraints=NO;
+    _selectedImagesScrollView.translatesAutoresizingMaskIntoConstraints=NO;
+    
     NSString *widthVfl =  @"H:|-0-[bottomBar]-0-|";
-    NSString *heightVfl = @"V:[bottomBar(80)]-0-|";
+    NSString *heightVfl = @"V:[bottomBar(100)]-0-|";
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:widthVfl options:0 metrics:0 views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:heightVfl options:0 metrics:0 views:views]];
     
-
+    [bottomBar addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_sendBtn]-5-|" options:0 metrics:0 views:views]];
+    [bottomBar addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_sendBtn]" options:0 metrics:0 views:views]];
     
+    [bottomBar addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-5-[_selectedTipsLabel]" options:0 metrics:0 views:views]];
+//    [bottomBar addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-5-[_selectedTipsLabel]" options:0 metrics:0 views:views]];
+    
+    [bottomBar addConstraint:[NSLayoutConstraint constraintWithItem:_selectedTipsLabel attribute:NSLayoutAttributeBaseline relatedBy:NSLayoutRelationEqual toItem:_sendBtn attribute:NSLayoutAttributeBaseline multiplier:1 constant:0]];
+
+    [bottomBar addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-5-[_selectedImagesScrollView]-5-|" options:0 metrics:0 views:views]];
+    [bottomBar addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_sendBtn]-0-[_selectedImagesScrollView]-5-|" options:0 metrics:0 views:views]];
 }
 
 //- (void) setupToorBar{
@@ -469,11 +485,11 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
 
 - (void)updateToolbar
 {
-    NSInteger count = self.selectAssets.count;
-    self.sendBtn.enabled = (count > 0);
-    self.previewBtn.enabled = (count > 0);
-    NSString *title = [NSString stringWithFormat:@"发送(%ld)",(long)count];
-    [self.sendBtn setTitle:title forState:UIControlStateNormal];
+//    NSInteger count = self.selectAssets.count;
+//    self.sendBtn.enabled = (count > 0);
+//    self.previewBtn.enabled = (count > 0);
+//    NSString *title = [NSString stringWithFormat:@"发送(%ld)",(long)count];
+//    [self.sendBtn setTitle:title forState:UIControlStateNormal];
 }
 
 #pragma mark - UICollectionViewDataSource

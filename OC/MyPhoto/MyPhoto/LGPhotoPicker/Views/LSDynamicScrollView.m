@@ -7,6 +7,7 @@
 //
 
 #import "LSDynamicScrollView.h"
+#import "LGPhotoPickerCommon.h"
 
 #define kDeleteButtonSize 26
 
@@ -25,7 +26,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor lightGrayColor];
+        self.backgroundColor = kBottomBarColor;
+//        self.backgroundColor=[UIColor redColor];
         UIScreen *screen = [UIScreen mainScreen];
         width = screen.bounds.size.width;
         height = screen.bounds.size.height;
