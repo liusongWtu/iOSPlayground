@@ -63,6 +63,9 @@
 		E43F10B31D2B9C780086E398 /* LSDynamicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10B21D2B9C780086E398 /* LSDynamicScrollView.m */; };
 		E43F10B61D2BAD0B0086E398 /* album_select_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10B41D2BAD0B0086E398 /* album_select_cancel@2x.png */; };
 		E43F10B71D2BAD0B0086E398 /* album_select_cancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10B51D2BAD0B0086E398 /* album_select_cancel@3x.png */; };
+		E43F10BE1D2D16D80086E398 /* SelectPhotoCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10BD1D2D16D80086E398 /* SelectPhotoCollectionView.m */; };
+		E43F10C11D2D17350086E398 /* SelectPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10C01D2D17350086E398 /* SelectPhotoCollectionViewCell.m */; };
+		E43F10C41D2D17E70086E398 /* SelectPhotoAssetGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10C31D2D17E70086E398 /* SelectPhotoAssetGridViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +174,12 @@
 		E43F10B21D2B9C780086E398 /* LSDynamicScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDynamicScrollView.m; sourceTree = "<group>"; };
 		E43F10B41D2BAD0B0086E398 /* album_select_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_cancel@2x.png"; sourceTree = "<group>"; };
 		E43F10B51D2BAD0B0086E398 /* album_select_cancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_select_cancel@3x.png"; sourceTree = "<group>"; };
+		E43F10BC1D2D16D80086E398 /* SelectPhotoCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoCollectionView.h; sourceTree = "<group>"; };
+		E43F10BD1D2D16D80086E398 /* SelectPhotoCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoCollectionView.m; sourceTree = "<group>"; };
+		E43F10BF1D2D17350086E398 /* SelectPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		E43F10C01D2D17350086E398 /* SelectPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		E43F10C21D2D17E70086E398 /* SelectPhotoAssetGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoAssetGridViewController.h; sourceTree = "<group>"; };
+		E43F10C31D2D17E70086E398 /* SelectPhotoAssetGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoAssetGridViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +230,7 @@
 		E42EB3F91D265AB700586022 /* MyPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				E43F10B81D2D10700086E398 /* PhotoBrower */,
 				E43F108F1D2A749F0086E398 /* ImagesNew */,
 				E43F10631D2A13FE0086E398 /* Images */,
 				E43F105C1D2A0AB40086E398 /* LGPhoto.h */,
@@ -436,6 +446,43 @@
 			path = ImagesNew;
 			sourceTree = "<group>";
 		};
+		E43F10B81D2D10700086E398 /* PhotoBrower */ = {
+			isa = PBXGroup;
+			children = (
+				E43F10B91D2D10BB0086E398 /* Models */,
+				E43F10BA1D2D10BB0086E398 /* ViewControllers */,
+				E43F10BB1D2D10BB0086E398 /* Views */,
+			);
+			path = PhotoBrower;
+			sourceTree = "<group>";
+		};
+		E43F10B91D2D10BB0086E398 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E43F10BA1D2D10BB0086E398 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E43F10C21D2D17E70086E398 /* SelectPhotoAssetGridViewController.h */,
+				E43F10C31D2D17E70086E398 /* SelectPhotoAssetGridViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E43F10BB1D2D10BB0086E398 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E43F10BC1D2D16D80086E398 /* SelectPhotoCollectionView.h */,
+				E43F10BD1D2D16D80086E398 /* SelectPhotoCollectionView.m */,
+				E43F10BF1D2D17350086E398 /* SelectPhotoCollectionViewCell.h */,
+				E43F10C01D2D17350086E398 /* SelectPhotoCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -607,8 +654,10 @@
 				E42EB3FC1D265AB700586022 /* main.m in Sources */,
 				E43F10571D2A0A3A0086E398 /* LGPhotoPickerCollectionView.m in Sources */,
 				E43F10551D2A0A3A0086E398 /* LGPhotoPickerGroupViewController.m in Sources */,
+				E43F10BE1D2D16D80086E398 /* SelectPhotoCollectionView.m in Sources */,
 				E43F105B1D2A0A3A0086E398 /* LGPhotoPickerImageView.m in Sources */,
 				E43F105A1D2A0A3A0086E398 /* LGPhotoPickerGroupTableViewCell.m in Sources */,
+				E43F10C41D2D17E70086E398 /* SelectPhotoAssetGridViewController.m in Sources */,
 				E43F104A1D2A0A3A0086E398 /* LGPhotoRect.m in Sources */,
 				E43F104F1D2A0A3A0086E398 /* LGPhotoPickerBrowserPhotoView.m in Sources */,
 				E43F10511D2A0A3A0086E398 /* LGPhotoAssets.m in Sources */,
@@ -616,6 +665,7 @@
 				E43F10501D2A0A3A0086E398 /* LGPhotoPickerCustomToolBarView.m in Sources */,
 				E43F10B31D2B9C780086E398 /* LSDynamicScrollView.m in Sources */,
 				E43F10591D2A0A3A0086E398 /* LGPhotoPickerFooterCollectionReusableView.m in Sources */,
+				E43F10C11D2D17350086E398 /* SelectPhotoCollectionViewCell.m in Sources */,
 				E43F104E1D2A0A3A0086E398 /* LGPhotoPickerBrowserPhotoScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

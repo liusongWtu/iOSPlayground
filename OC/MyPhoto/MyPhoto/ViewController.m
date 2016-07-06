@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "LGPhoto.h"
+#import "LSDynamicScrollView.h"
+#import "SelectPhotoAssetGridViewController.h"
 
 @interface ViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate,LGPhotoPickerViewControllerDelegate>
 
@@ -35,6 +37,26 @@
 
 - (IBAction)selectPic:(id)sender {
     [self presentPhotoPickerViewControllerWithStyle:LGShowImageTypeImagePicker];
+}
+- (IBAction)photoKitBrower:(id)sender {
+    SelectPhotoAssetGridViewController *gridVC = [[SelectPhotoAssetGridViewController alloc] init];
+    PHFetchOptions *options = [[PHFetchOptions alloc] init];
+    options.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
+    gridVC.assrtsFetchResults = [PHAsset fetchAssetsWithOptions:options];
+    
+//    gridVC.modalPresentationStyle=UIModalPresentationPopover;
+//    
+//    UIPopoverPresentationController *popPC = gridVC.popoverPresentationController;
+//    popPC.permittedArrowDirections = UIPopoverArrowDirectionAny;
+//    [self showViewController:gridVC sender:nil];
+    
+    UINavigationController *navController=[[UINavigationController alloc] initWithRootViewController:gridVC];
+    navController.view.frame = self.view.bounds;
+//    [self addChildViewController:navController];
+//    [self.view addSubview:navController.view];
+//    [navController didMoveToParentViewController:self];
+    navController.modalPresentationStyle=UIModalPresentationPopover;
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)presentPhotoPickerViewControllerWithStyle:(LGShowImageType)style {
