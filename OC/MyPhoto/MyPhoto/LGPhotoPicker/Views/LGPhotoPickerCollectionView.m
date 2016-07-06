@@ -88,7 +88,7 @@
     }
 }
 /**
- *  每个cell右上角的选择按钮
+ *  每个cell右下角的选择按钮
  */
 - (void)setupTickButtonOnCell:(LGPhotoPickerCollectionViewCell *)cell
                       AtIndex:(NSIndexPath *)indexPath

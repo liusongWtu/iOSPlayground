@@ -135,6 +135,7 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
 -(LSDynamicScrollView*)selectedImagesScrollView{
     if (!_selectedImagesScrollView) {
         NSArray *images=@[@"broswerPic0.jpg",@"broswerPic1.jpg",@"broswerPic0.jpg",@"broswerPic1.jpg",@"broswerPic0.jpg",@"broswerPic1.jpg",@"broswerPic0.jpg",@"broswerPic1.jpg"];
+        images=nil;
         _selectedImagesScrollView = [[LSDynamicScrollView alloc] initWithFrame:CGRectMake(0, (SCREEN_HEIGHT - 60)/2, SCREEN_WIDTH-10, 60) withImages:[images mutableCopy]];
         _selectedImagesScrollView.deleteImageBlock=^(int index){
             NSLog(@"delete:%d",index);
@@ -202,7 +203,7 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
     self.sendBtn.enabled = (count > 0);
     self.previewBtn.enabled = (count > 0);
     
-    [self updateToolbar];
+//    [self updateToolbar];
 }
 
 - (void)setTopShowPhotoPicker:(BOOL)topShowPhotoPicker{
@@ -398,6 +399,8 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
 
     [bottomBar addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-5-[_selectedImagesScrollView]-5-|" options:0 metrics:0 views:views]];
     [bottomBar addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_sendBtn]-0-[_selectedImagesScrollView]-5-|" options:0 metrics:0 views:views]];
+    
+    bottomBar.hidden=YES;
 }
 
 //- (void) setupToorBar{
@@ -468,23 +471,53 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
 
     if (self.selectPickerAssets.count == 0){
         self.selectAssets = [NSMutableArray arrayWithArray:pickerCollectionView.selectAssets];
+        //显示下部选中列表
+        
+        int currentIndex=self.selectAssets.count>0? self.selectAssets.count-1:0;
+        LGPhotoAssets *assets=self.selectAssets[currentIndex];
+        [self.selectedImagesScrollView addImageViewWithImage:assets.thumbImage];
+        self.bottomBar.hidden=NO;
+        if (deleteAssets) {//取消选中
+            
+        }else{
+            
+        }
+        
+        
     } else if (deleteAssets == nil) {
-        [self.selectAssets addObject:[pickerCollectionView.selectAssets lastObject]];
+        LGPhotoAssets *currentAssets=[pickerCollectionView.selectAssets lastObject];
+        [self.selectAssets addObject:currentAssets];
+        //添加到底部选择框列表
+        [self.selectedImagesScrollView addImageViewWithImage:currentAssets.thumbImage];
+        self.bottomBar.hidden=NO;
     } else if(deleteAssets) { //取消所选的照片
         //根据url删除对象
         NSArray *arr = [self.selectAssets copy];
+        int index=0;
         for (LGPhotoAssets *selectAsset in arr) {
+            index++;
             if ([selectAsset.assetURL isEqual:deleteAssets.assetURL]) {
                 [self.selectAssets removeObject:selectAsset];
+                [self.selectedImagesScrollView removeImageByIndex:index];
+                break;
             }
+        }
+        if (self.selectAssets.count<=0) {
+            self.bottomBar.hidden=YES;
         }
     }
 
-    [self updateToolbar];
+//    [self updateToolbar];
 }
 
-- (void)updateToolbar
-{
+- (void)updateToolbar:(BOOL)isAdd withAssets:(LGPhotoAssets*)assets{
+    if (isAdd) {
+        
+        
+    }else{
+        
+    }
+    
 //    NSInteger count = self.selectAssets.count;
 //    self.sendBtn.enabled = (count > 0);
 //    self.previewBtn.enabled = (count > 0);
@@ -571,7 +604,7 @@ static NSString *const _identifier = @"toolBarThumbCollectionViewCell";
     self.sendBtn.enabled = (count > 0);
     self.previewBtn.enabled = (count > 0);
     self.isOriginal = pickerBrowser.isOriginal;
-    [self updateToolbar];
+//    [self updateToolbar];
 }
 
 - (void)photoBrowserSendBtnTouched:(LGPhotoPickerBrowserViewController *)pickerBrowser isOriginal:(BOOL)isOriginal

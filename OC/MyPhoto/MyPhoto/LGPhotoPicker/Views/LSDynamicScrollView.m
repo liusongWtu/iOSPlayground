@@ -62,19 +62,23 @@
     self.scrollView.contentSize = CGSizeMake(self.images.count * singleWidth, self.scrollView.frame.size.height);
 }
 
-- (void)createImageViews:(int)i withImageName:(NSString *)imageName
-{
+- (void)createImageViews:(int)i withImageName:(NSString *)imageName{
+    UIImage *image=[UIImage imageNamed:imageName];
+    [self createImageViews:i withImage:image];
+}
+
+- (void)createImageViews:(int)i withImage:(UIImage *)image{
     UIView *view=[[UIView alloc] initWithFrame:CGRectMake(singleWidth*i, 0, singleWidth, singleWidth)];
     [self.scrollView addSubview:view];
     [self.viewItems addObject:view];
     
-    UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+    UIImageView *imgView = [[UIImageView alloc] initWithImage:image];
     imgView.frame = CGRectMake(0, kDeleteButtonSize/2, imageViewWidth, imageViewWidth);
     imgView.userInteractionEnabled = YES;
     [view addSubview:imgView];
     UITapGestureRecognizer *tapPress=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
     [imgView addGestureRecognizer:tapPress];
-
+    
     UIButton *deleteButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [deleteButton setImage:[UIImage imageNamed:@"album_select_cancel"] forState:UIControlStateNormal];
     [deleteButton addTarget:self action:@selector(deleteAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -82,6 +86,7 @@
     deleteButton.backgroundColor = [UIColor clearColor];
     [view addSubview:deleteButton];
 }
+
 
 -(void)tapAction:(UITapGestureRecognizer*)recognizer{
     if (self.clickImageBlock) {
@@ -95,6 +100,36 @@
 {
     UIView *view = (UIView *)button.superview;
     __block int index = (int)[self.viewItems indexOfObject:view];
+    [self deleteImageByIndex:index];
+//    __block CGRect rect = view.frame;
+//    __weak UIScrollView *weakScroll = self.scrollView;
+//    [UIView animateWithDuration:0.3 animations:^{
+//        view.transform = CGAffineTransformMakeScale(0.01, 0.01);
+//    } completion:^(BOOL finished) {
+//        [view removeFromSuperview];
+//        if (self.deleteImageBlock) {
+//            self.deleteImageBlock(index);
+//        }
+//        
+//        [UIView animateWithDuration:0.3 animations:^{
+//            for (int i = index + 1; i < self.viewItems.count; i++) {
+//                UIImageView *otherImageView = self.viewItems[i];
+//                CGRect originRect = otherImageView.frame;
+//                otherImageView.frame = rect;
+//                rect = originRect;
+//            }
+//        } completion:^(BOOL finished) {
+//            [self.viewItems removeObject:view];
+//            if (self.viewItems.count*singleWidth >= width) {
+//                weakScroll.contentSize = CGSizeMake(singleWidth*self.viewItems.count, self.scrollView.frame.size.height);
+//            }
+//        }];
+//    }];
+}
+
+-(void)deleteImageByIndex:(int)idx{
+    UIView *view = (UIView *)self.viewItems[idx];
+    __block int index =idx;
     __block CGRect rect = view.frame;
     __weak UIScrollView *weakScroll = self.scrollView;
     [UIView animateWithDuration:0.3 animations:^{
@@ -121,15 +156,28 @@
     }];
 }
 
-//添加一个新图片
-- (void)addImageView:(NSString *)imageName
-{
-    [self createImageViews:(int)self.viewItems.count withImageName:imageName];
-    
+
+-(void)updateScrollView{
     self.scrollView.contentSize = CGSizeMake(singleWidth*self.viewItems.count, self.scrollView.frame.size.height);
     if (self.viewItems.count*singleWidth >=width) {
         [self.scrollView setContentOffset:CGPointMake(self.viewItems.count*singleWidth-width, 0) animated:YES];
     }
+}
+
+//添加一个新图片
+- (void)addImageView:(NSString *)imageName
+{
+    [self createImageViews:(int)self.viewItems.count withImageName:imageName];
+    [self updateScrollView];
+}
+
+-(void)addImageViewWithImage:(UIImage*)image{
+    [self createImageViews:(int)self.viewItems.count withImage:image];
+    [self updateScrollView];
+}
+
+-(void)removeImageByIndex:(int)index{
+    [self deleteImageByIndex:index];
 }
 
 @end

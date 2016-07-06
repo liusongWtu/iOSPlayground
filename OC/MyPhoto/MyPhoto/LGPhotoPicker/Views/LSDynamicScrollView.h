@@ -25,5 +25,8 @@
 
 //添加一个新图片
 - (void)addImageView:(NSString *)imageName;
+-(void)addImageViewWithImage:(UIImage*)image;
+//移除一个图片
+-(void)removeImageByIndex:(int)index;
 
 @end
