@@ -66,6 +66,48 @@
 		E43F10BE1D2D16D80086E398 /* SelectPhotoCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10BD1D2D16D80086E398 /* SelectPhotoCollectionView.m */; };
 		E43F10C11D2D17350086E398 /* SelectPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10C01D2D17350086E398 /* SelectPhotoCollectionViewCell.m */; };
 		E43F10C41D2D17E70086E398 /* SelectPhotoAssetGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10C31D2D17E70086E398 /* SelectPhotoAssetGridViewController.m */; };
+		E43F11011D2DF1F80086E398 /* ImageError.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10C81D2DF1F80086E398 /* ImageError.png */; };
+		E43F11021D2DF1F80086E398 /* ImageError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10C91D2DF1F80086E398 /* ImageError@2x.png */; };
+		E43F11031D2DF1F80086E398 /* ImageError@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10CA1D2DF1F80086E398 /* ImageError@3x.png */; };
+		E43F11041D2DF1F80086E398 /* ImageSelectedOff.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10CB1D2DF1F80086E398 /* ImageSelectedOff.png */; };
+		E43F11051D2DF1F80086E398 /* ImageSelectedOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10CC1D2DF1F80086E398 /* ImageSelectedOff@2x.png */; };
+		E43F11061D2DF1F80086E398 /* ImageSelectedOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10CD1D2DF1F80086E398 /* ImageSelectedOff@3x.png */; };
+		E43F11071D2DF1F80086E398 /* ImageSelectedOn.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10CE1D2DF1F80086E398 /* ImageSelectedOn.png */; };
+		E43F11081D2DF1F80086E398 /* ImageSelectedOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10CF1D2DF1F80086E398 /* ImageSelectedOn@2x.png */; };
+		E43F11091D2DF1F80086E398 /* ImageSelectedOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10D01D2DF1F80086E398 /* ImageSelectedOn@3x.png */; };
+		E43F110A1D2DF1F80086E398 /* ImageSelectedSmallOff.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10D11D2DF1F80086E398 /* ImageSelectedSmallOff.png */; };
+		E43F110B1D2DF1F80086E398 /* ImageSelectedSmallOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10D21D2DF1F80086E398 /* ImageSelectedSmallOff@2x.png */; };
+		E43F110C1D2DF1F80086E398 /* ImageSelectedSmallOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10D31D2DF1F80086E398 /* ImageSelectedSmallOff@3x.png */; };
+		E43F110D1D2DF1F80086E398 /* ImageSelectedSmallOn.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10D41D2DF1F80086E398 /* ImageSelectedSmallOn.png */; };
+		E43F110E1D2DF1F80086E398 /* ImageSelectedSmallOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10D51D2DF1F80086E398 /* ImageSelectedSmallOn@2x.png */; };
+		E43F110F1D2DF1F80086E398 /* ImageSelectedSmallOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10D61D2DF1F80086E398 /* ImageSelectedSmallOn@3x.png */; };
+		E43F11101D2DF1F80086E398 /* PlayButtonOverlayLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10D71D2DF1F80086E398 /* PlayButtonOverlayLarge.png */; };
+		E43F11111D2DF1F80086E398 /* PlayButtonOverlayLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10D81D2DF1F80086E398 /* PlayButtonOverlayLarge@2x.png */; };
+		E43F11121D2DF1F80086E398 /* PlayButtonOverlayLarge@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10D91D2DF1F80086E398 /* PlayButtonOverlayLarge@3x.png */; };
+		E43F11131D2DF1F80086E398 /* PlayButtonOverlayLargeTap.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10DA1D2DF1F80086E398 /* PlayButtonOverlayLargeTap.png */; };
+		E43F11141D2DF1F80086E398 /* PlayButtonOverlayLargeTap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10DB1D2DF1F80086E398 /* PlayButtonOverlayLargeTap@2x.png */; };
+		E43F11151D2DF1F80086E398 /* PlayButtonOverlayLargeTap@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10DC1D2DF1F80086E398 /* PlayButtonOverlayLargeTap@3x.png */; };
+		E43F11161D2DF1F80086E398 /* UIBarButtonItemArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10DD1D2DF1F80086E398 /* UIBarButtonItemArrowLeft.png */; };
+		E43F11171D2DF1F80086E398 /* UIBarButtonItemArrowLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10DE1D2DF1F80086E398 /* UIBarButtonItemArrowLeft@2x.png */; };
+		E43F11181D2DF1F80086E398 /* UIBarButtonItemArrowLeft@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10DF1D2DF1F80086E398 /* UIBarButtonItemArrowLeft@3x.png */; };
+		E43F11191D2DF1F80086E398 /* UIBarButtonItemArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10E01D2DF1F80086E398 /* UIBarButtonItemArrowRight.png */; };
+		E43F111A1D2DF1F80086E398 /* UIBarButtonItemArrowRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10E11D2DF1F80086E398 /* UIBarButtonItemArrowRight@2x.png */; };
+		E43F111B1D2DF1F80086E398 /* UIBarButtonItemArrowRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10E21D2DF1F80086E398 /* UIBarButtonItemArrowRight@3x.png */; };
+		E43F111C1D2DF1F80086E398 /* UIBarButtonItemGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10E31D2DF1F80086E398 /* UIBarButtonItemGrid.png */; };
+		E43F111D1D2DF1F80086E398 /* UIBarButtonItemGrid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10E41D2DF1F80086E398 /* UIBarButtonItemGrid@2x.png */; };
+		E43F111E1D2DF1F80086E398 /* UIBarButtonItemGrid@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10E51D2DF1F80086E398 /* UIBarButtonItemGrid@3x.png */; };
+		E43F111F1D2DF1F80086E398 /* VideoOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10E61D2DF1F80086E398 /* VideoOverlay.png */; };
+		E43F11201D2DF1F80086E398 /* VideoOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10E71D2DF1F80086E398 /* VideoOverlay@2x.png */; };
+		E43F11211D2DF1F80086E398 /* VideoOverlay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E43F10E81D2DF1F80086E398 /* VideoOverlay@3x.png */; };
+		E43F11231D2DF1F80086E398 /* MWCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10EC1D2DF1F80086E398 /* MWCaptionView.m */; };
+		E43F11241D2DF1F80086E398 /* MWGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10EF1D2DF1F80086E398 /* MWGridCell.m */; };
+		E43F11251D2DF1F80086E398 /* MWGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10F11D2DF1F80086E398 /* MWGridViewController.m */; };
+		E43F11261D2DF1F80086E398 /* MWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10F31D2DF1F80086E398 /* MWPhoto.m */; };
+		E43F11271D2DF1F80086E398 /* MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10F51D2DF1F80086E398 /* MWPhotoBrowser.m */; };
+		E43F11281D2DF1F80086E398 /* MWTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10F91D2DF1F80086E398 /* MWTapDetectingImageView.m */; };
+		E43F11291D2DF1F80086E398 /* MWTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10FB1D2DF1F80086E398 /* MWTapDetectingView.m */; };
+		E43F112A1D2DF1F80086E398 /* MWZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10FD1D2DF1F80086E398 /* MWZoomingScrollView.m */; };
+		E43F112B1D2DF1F80086E398 /* UIImage+MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10FF1D2DF1F80086E398 /* UIImage+MWPhotoBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +222,60 @@
 		E43F10C01D2D17350086E398 /* SelectPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		E43F10C21D2D17E70086E398 /* SelectPhotoAssetGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoAssetGridViewController.h; sourceTree = "<group>"; };
 		E43F10C31D2D17E70086E398 /* SelectPhotoAssetGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoAssetGridViewController.m; sourceTree = "<group>"; };
+		E43F10C81D2DF1F80086E398 /* ImageError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageError.png; sourceTree = "<group>"; };
+		E43F10C91D2DF1F80086E398 /* ImageError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@2x.png"; sourceTree = "<group>"; };
+		E43F10CA1D2DF1F80086E398 /* ImageError@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@3x.png"; sourceTree = "<group>"; };
+		E43F10CB1D2DF1F80086E398 /* ImageSelectedOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedOff.png; sourceTree = "<group>"; };
+		E43F10CC1D2DF1F80086E398 /* ImageSelectedOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOff@2x.png"; sourceTree = "<group>"; };
+		E43F10CD1D2DF1F80086E398 /* ImageSelectedOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOff@3x.png"; sourceTree = "<group>"; };
+		E43F10CE1D2DF1F80086E398 /* ImageSelectedOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedOn.png; sourceTree = "<group>"; };
+		E43F10CF1D2DF1F80086E398 /* ImageSelectedOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOn@2x.png"; sourceTree = "<group>"; };
+		E43F10D01D2DF1F80086E398 /* ImageSelectedOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOn@3x.png"; sourceTree = "<group>"; };
+		E43F10D11D2DF1F80086E398 /* ImageSelectedSmallOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedSmallOff.png; sourceTree = "<group>"; };
+		E43F10D21D2DF1F80086E398 /* ImageSelectedSmallOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOff@2x.png"; sourceTree = "<group>"; };
+		E43F10D31D2DF1F80086E398 /* ImageSelectedSmallOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOff@3x.png"; sourceTree = "<group>"; };
+		E43F10D41D2DF1F80086E398 /* ImageSelectedSmallOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedSmallOn.png; sourceTree = "<group>"; };
+		E43F10D51D2DF1F80086E398 /* ImageSelectedSmallOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOn@2x.png"; sourceTree = "<group>"; };
+		E43F10D61D2DF1F80086E398 /* ImageSelectedSmallOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOn@3x.png"; sourceTree = "<group>"; };
+		E43F10D71D2DF1F80086E398 /* PlayButtonOverlayLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonOverlayLarge.png; sourceTree = "<group>"; };
+		E43F10D81D2DF1F80086E398 /* PlayButtonOverlayLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLarge@2x.png"; sourceTree = "<group>"; };
+		E43F10D91D2DF1F80086E398 /* PlayButtonOverlayLarge@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLarge@3x.png"; sourceTree = "<group>"; };
+		E43F10DA1D2DF1F80086E398 /* PlayButtonOverlayLargeTap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonOverlayLargeTap.png; sourceTree = "<group>"; };
+		E43F10DB1D2DF1F80086E398 /* PlayButtonOverlayLargeTap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLargeTap@2x.png"; sourceTree = "<group>"; };
+		E43F10DC1D2DF1F80086E398 /* PlayButtonOverlayLargeTap@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLargeTap@3x.png"; sourceTree = "<group>"; };
+		E43F10DD1D2DF1F80086E398 /* UIBarButtonItemArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonItemArrowLeft.png; sourceTree = "<group>"; };
+		E43F10DE1D2DF1F80086E398 /* UIBarButtonItemArrowLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowLeft@2x.png"; sourceTree = "<group>"; };
+		E43F10DF1D2DF1F80086E398 /* UIBarButtonItemArrowLeft@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowLeft@3x.png"; sourceTree = "<group>"; };
+		E43F10E01D2DF1F80086E398 /* UIBarButtonItemArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonItemArrowRight.png; sourceTree = "<group>"; };
+		E43F10E11D2DF1F80086E398 /* UIBarButtonItemArrowRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowRight@2x.png"; sourceTree = "<group>"; };
+		E43F10E21D2DF1F80086E398 /* UIBarButtonItemArrowRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowRight@3x.png"; sourceTree = "<group>"; };
+		E43F10E31D2DF1F80086E398 /* UIBarButtonItemGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonItemGrid.png; sourceTree = "<group>"; };
+		E43F10E41D2DF1F80086E398 /* UIBarButtonItemGrid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemGrid@2x.png"; sourceTree = "<group>"; };
+		E43F10E51D2DF1F80086E398 /* UIBarButtonItemGrid@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemGrid@3x.png"; sourceTree = "<group>"; };
+		E43F10E61D2DF1F80086E398 /* VideoOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VideoOverlay.png; sourceTree = "<group>"; };
+		E43F10E71D2DF1F80086E398 /* VideoOverlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VideoOverlay@2x.png"; sourceTree = "<group>"; };
+		E43F10E81D2DF1F80086E398 /* VideoOverlay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VideoOverlay@3x.png"; sourceTree = "<group>"; };
+		E43F10EB1D2DF1F80086E398 /* MWCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCaptionView.h; sourceTree = "<group>"; };
+		E43F10EC1D2DF1F80086E398 /* MWCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCaptionView.m; sourceTree = "<group>"; };
+		E43F10ED1D2DF1F80086E398 /* MWCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCommon.h; sourceTree = "<group>"; };
+		E43F10EE1D2DF1F80086E398 /* MWGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWGridCell.h; sourceTree = "<group>"; };
+		E43F10EF1D2DF1F80086E398 /* MWGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWGridCell.m; sourceTree = "<group>"; };
+		E43F10F01D2DF1F80086E398 /* MWGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWGridViewController.h; sourceTree = "<group>"; };
+		E43F10F11D2DF1F80086E398 /* MWGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWGridViewController.m; sourceTree = "<group>"; };
+		E43F10F21D2DF1F80086E398 /* MWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhoto.h; sourceTree = "<group>"; };
+		E43F10F31D2DF1F80086E398 /* MWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhoto.m; sourceTree = "<group>"; };
+		E43F10F41D2DF1F80086E398 /* MWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowser.h; sourceTree = "<group>"; };
+		E43F10F51D2DF1F80086E398 /* MWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowser.m; sourceTree = "<group>"; };
+		E43F10F61D2DF1F80086E398 /* MWPhotoBrowserPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowserPrivate.h; sourceTree = "<group>"; };
+		E43F10F71D2DF1F80086E398 /* MWPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoProtocol.h; sourceTree = "<group>"; };
+		E43F10F81D2DF1F80086E398 /* MWTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingImageView.h; sourceTree = "<group>"; };
+		E43F10F91D2DF1F80086E398 /* MWTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingImageView.m; sourceTree = "<group>"; };
+		E43F10FA1D2DF1F80086E398 /* MWTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingView.h; sourceTree = "<group>"; };
+		E43F10FB1D2DF1F80086E398 /* MWTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingView.m; sourceTree = "<group>"; };
+		E43F10FC1D2DF1F80086E398 /* MWZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWZoomingScrollView.h; sourceTree = "<group>"; };
+		E43F10FD1D2DF1F80086E398 /* MWZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWZoomingScrollView.m; sourceTree = "<group>"; };
+		E43F10FE1D2DF1F80086E398 /* UIImage+MWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MWPhotoBrowser.h"; sourceTree = "<group>"; };
+		E43F10FF1D2DF1F80086E398 /* UIImage+MWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MWPhotoBrowser.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +326,7 @@
 		E42EB3F91D265AB700586022 /* MyPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				E43F10C51D2DF1F80086E398 /* MWPhotoBrowser */,
 				E43F10B81D2D10700086E398 /* PhotoBrower */,
 				E43F108F1D2A749F0086E398 /* ImagesNew */,
 				E43F10631D2A13FE0086E398 /* Images */,
@@ -483,6 +580,83 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E43F10C51D2DF1F80086E398 /* MWPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				E43F10C61D2DF1F80086E398 /* Assets */,
+				E43F10E91D2DF1F80086E398 /* Classes */,
+			);
+			path = MWPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		E43F10C61D2DF1F80086E398 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E43F10C81D2DF1F80086E398 /* ImageError.png */,
+				E43F10C91D2DF1F80086E398 /* ImageError@2x.png */,
+				E43F10CA1D2DF1F80086E398 /* ImageError@3x.png */,
+				E43F10CB1D2DF1F80086E398 /* ImageSelectedOff.png */,
+				E43F10CC1D2DF1F80086E398 /* ImageSelectedOff@2x.png */,
+				E43F10CD1D2DF1F80086E398 /* ImageSelectedOff@3x.png */,
+				E43F10CE1D2DF1F80086E398 /* ImageSelectedOn.png */,
+				E43F10CF1D2DF1F80086E398 /* ImageSelectedOn@2x.png */,
+				E43F10D01D2DF1F80086E398 /* ImageSelectedOn@3x.png */,
+				E43F10D11D2DF1F80086E398 /* ImageSelectedSmallOff.png */,
+				E43F10D21D2DF1F80086E398 /* ImageSelectedSmallOff@2x.png */,
+				E43F10D31D2DF1F80086E398 /* ImageSelectedSmallOff@3x.png */,
+				E43F10D41D2DF1F80086E398 /* ImageSelectedSmallOn.png */,
+				E43F10D51D2DF1F80086E398 /* ImageSelectedSmallOn@2x.png */,
+				E43F10D61D2DF1F80086E398 /* ImageSelectedSmallOn@3x.png */,
+				E43F10D71D2DF1F80086E398 /* PlayButtonOverlayLarge.png */,
+				E43F10D81D2DF1F80086E398 /* PlayButtonOverlayLarge@2x.png */,
+				E43F10D91D2DF1F80086E398 /* PlayButtonOverlayLarge@3x.png */,
+				E43F10DA1D2DF1F80086E398 /* PlayButtonOverlayLargeTap.png */,
+				E43F10DB1D2DF1F80086E398 /* PlayButtonOverlayLargeTap@2x.png */,
+				E43F10DC1D2DF1F80086E398 /* PlayButtonOverlayLargeTap@3x.png */,
+				E43F10DD1D2DF1F80086E398 /* UIBarButtonItemArrowLeft.png */,
+				E43F10DE1D2DF1F80086E398 /* UIBarButtonItemArrowLeft@2x.png */,
+				E43F10DF1D2DF1F80086E398 /* UIBarButtonItemArrowLeft@3x.png */,
+				E43F10E01D2DF1F80086E398 /* UIBarButtonItemArrowRight.png */,
+				E43F10E11D2DF1F80086E398 /* UIBarButtonItemArrowRight@2x.png */,
+				E43F10E21D2DF1F80086E398 /* UIBarButtonItemArrowRight@3x.png */,
+				E43F10E31D2DF1F80086E398 /* UIBarButtonItemGrid.png */,
+				E43F10E41D2DF1F80086E398 /* UIBarButtonItemGrid@2x.png */,
+				E43F10E51D2DF1F80086E398 /* UIBarButtonItemGrid@3x.png */,
+				E43F10E61D2DF1F80086E398 /* VideoOverlay.png */,
+				E43F10E71D2DF1F80086E398 /* VideoOverlay@2x.png */,
+				E43F10E81D2DF1F80086E398 /* VideoOverlay@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E43F10E91D2DF1F80086E398 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E43F10EB1D2DF1F80086E398 /* MWCaptionView.h */,
+				E43F10EC1D2DF1F80086E398 /* MWCaptionView.m */,
+				E43F10ED1D2DF1F80086E398 /* MWCommon.h */,
+				E43F10EE1D2DF1F80086E398 /* MWGridCell.h */,
+				E43F10EF1D2DF1F80086E398 /* MWGridCell.m */,
+				E43F10F01D2DF1F80086E398 /* MWGridViewController.h */,
+				E43F10F11D2DF1F80086E398 /* MWGridViewController.m */,
+				E43F10F21D2DF1F80086E398 /* MWPhoto.h */,
+				E43F10F31D2DF1F80086E398 /* MWPhoto.m */,
+				E43F10F41D2DF1F80086E398 /* MWPhotoBrowser.h */,
+				E43F10F51D2DF1F80086E398 /* MWPhotoBrowser.m */,
+				E43F10F61D2DF1F80086E398 /* MWPhotoBrowserPrivate.h */,
+				E43F10F71D2DF1F80086E398 /* MWPhotoProtocol.h */,
+				E43F10F81D2DF1F80086E398 /* MWTapDetectingImageView.h */,
+				E43F10F91D2DF1F80086E398 /* MWTapDetectingImageView.m */,
+				E43F10FA1D2DF1F80086E398 /* MWTapDetectingView.h */,
+				E43F10FB1D2DF1F80086E398 /* MWTapDetectingView.m */,
+				E43F10FC1D2DF1F80086E398 /* MWZoomingScrollView.h */,
+				E43F10FD1D2DF1F80086E398 /* MWZoomingScrollView.m */,
+				E43F10FE1D2DF1F80086E398 /* UIImage+MWPhotoBrowser.h */,
+				E43F10FF1D2DF1F80086E398 /* UIImage+MWPhotoBrowser.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -587,34 +761,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				E43F10871D2A13FE0086E398 /* shanguangdeng2@2x.png in Resources */,
+				E43F11091D2DF1F80086E398 /* ImageSelectedOn@3x.png in Resources */,
 				E43F10811D2A13FE0086E398 /* checkbox_pic_non@2x.png in Resources */,
+				E43F11161D2DF1F80086E398 /* UIBarButtonItemArrowLeft.png in Resources */,
 				E43F107D1D2A13FE0086E398 /* btn_back_imagePicker@2x.png in Resources */,
 				E43F107A1D2A13FE0086E398 /* broswerPic2.jpg in Resources */,
+				E43F110B1D2DF1F80086E398 /* ImageSelectedSmallOff@2x.png in Resources */,
 				E43F107B1D2A13FE0086E398 /* broswerPic3.jpg in Resources */,
+				E43F11211D2DF1F80086E398 /* VideoOverlay@3x.png in Resources */,
 				E43F10941D2A749F0086E398 /* album_select_icon@2x.png in Resources */,
+				E43F11031D2DF1F80086E398 /* ImageError@3x.png in Resources */,
 				E43F108A1D2A13FE0086E398 /* xiang.png in Resources */,
 				E43F107C1D2A13FE0086E398 /* broswerPic4.jpg in Resources */,
 				E43F10861D2A13FE0086E398 /* shanguangdeng2.png in Resources */,
+				E43F11151D2DF1F80086E398 /* PlayButtonOverlayLargeTap@3x.png in Resources */,
+				E43F11101D2DF1F80086E398 /* PlayButtonOverlayLarge.png in Resources */,
+				E43F11011D2DF1F80086E398 /* ImageError.png in Resources */,
+				E43F111E1D2DF1F80086E398 /* UIBarButtonItemGrid@3x.png in Resources */,
+				E43F110A1D2DF1F80086E398 /* ImageSelectedSmallOff.png in Resources */,
+				E43F11051D2DF1F80086E398 /* ImageSelectedOff@2x.png in Resources */,
+				E43F11201D2DF1F80086E398 /* VideoOverlay@2x.png in Resources */,
+				E43F11071D2DF1F80086E398 /* ImageSelectedOn.png in Resources */,
+				E43F11191D2DF1F80086E398 /* UIBarButtonItemArrowRight.png in Resources */,
 				E43F10791D2A13FE0086E398 /* broswerPic1.jpg in Resources */,
 				E43F107F1D2A13FE0086E398 /* checkbox_pic@2x.png in Resources */,
+				E43F111B1D2DF1F80086E398 /* UIBarButtonItemArrowRight@3x.png in Resources */,
 				E43F10831D2A13FE0086E398 /* lock@2x.png in Resources */,
 				E42EB40A1D265AB700586022 /* LaunchScreen.storyboard in Resources */,
 				E43F10821D2A13FE0086E398 /* icon_pic_break@2x.png in Resources */,
+				E43F111C1D2DF1F80086E398 /* UIBarButtonItemGrid.png in Resources */,
+				E43F110D1D2DF1F80086E398 /* ImageSelectedSmallOn.png in Resources */,
 				E43F108B1D2A13FE0086E398 /* xiang@2x.png in Resources */,
+				E43F111F1D2DF1F80086E398 /* VideoOverlay.png in Resources */,
 				E43F10B71D2BAD0B0086E398 /* album_select_cancel@3x.png in Resources */,
 				E43F10841D2A13FE0086E398 /* paizhao.png in Resources */,
+				E43F11121D2DF1F80086E398 /* PlayButtonOverlayLarge@3x.png in Resources */,
+				E43F11131D2DF1F80086E398 /* PlayButtonOverlayLargeTap.png in Resources */,
 				E43F10B61D2BAD0B0086E398 /* album_select_cancel@2x.png in Resources */,
+				E43F111A1D2DF1F80086E398 /* UIBarButtonItemArrowRight@2x.png in Resources */,
+				E43F11081D2DF1F80086E398 /* ImageSelectedOn@2x.png in Resources */,
 				E42EB4071D265AB700586022 /* Assets.xcassets in Resources */,
 				E43F10951D2A749F0086E398 /* album_select_icon@3x.png in Resources */,
+				E43F11141D2DF1F80086E398 /* PlayButtonOverlayLargeTap@2x.png in Resources */,
+				E43F11181D2DF1F80086E398 /* UIBarButtonItemArrowLeft@3x.png in Resources */,
+				E43F11041D2DF1F80086E398 /* ImageSelectedOff.png in Resources */,
 				E43F10851D2A13FE0086E398 /* paizhao@2x.png in Resources */,
+				E43F111D1D2DF1F80086E398 /* UIBarButtonItemGrid@2x.png in Resources */,
 				E43F10781D2A13FE0086E398 /* broswerPic0.jpg in Resources */,
 				E43F10961D2A749F0086E398 /* album_select_null_icon@2x.png in Resources */,
 				E43F10881D2A13FE0086E398 /* X.png in Resources */,
 				E42EB4051D265AB700586022 /* Main.storyboard in Resources */,
 				E43F10891D2A13FE0086E398 /* X@2x.png in Resources */,
+				E43F110F1D2DF1F80086E398 /* ImageSelectedSmallOn@3x.png in Resources */,
+				E43F11021D2DF1F80086E398 /* ImageError@2x.png in Resources */,
+				E43F11111D2DF1F80086E398 /* PlayButtonOverlayLarge@2x.png in Resources */,
 				E43F10971D2A749F0086E398 /* album_select_null_icon@3x.png in Resources */,
+				E43F110E1D2DF1F80086E398 /* ImageSelectedSmallOn@2x.png in Resources */,
+				E43F11061D2DF1F80086E398 /* ImageSelectedOff@3x.png in Resources */,
 				E43F107E1D2A13FE0086E398 /* checkbox_pic2@2x.png in Resources */,
+				E43F110C1D2DF1F80086E398 /* ImageSelectedSmallOff@3x.png in Resources */,
 				E43F10801D2A13FE0086E398 /* checkbox_pic_non2@2x.png in Resources */,
+				E43F11171D2DF1F80086E398 /* UIBarButtonItemArrowLeft@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,30 +850,39 @@
 				E43F104D1D2A0A3A0086E398 /* LGPhotoPickerBrowserPhotoImageView.m in Sources */,
 				E42EB4021D265AB700586022 /* ViewController.m in Sources */,
 				E43F10541D2A0A3A0086E398 /* LGPhotoPickerAssetsViewController.m in Sources */,
+				E43F11281D2DF1F80086E398 /* MWTapDetectingImageView.m in Sources */,
 				E43F10531D2A0A3A0086E398 /* LGPhotoPickerGroup.m in Sources */,
 				E43F10521D2A0A3A0086E398 /* LGPhotoPickerDatas.m in Sources */,
 				E43F10581D2A0A3A0086E398 /* LGPhotoPickerCollectionViewCell.m in Sources */,
+				E43F112B1D2DF1F80086E398 /* UIImage+MWPhotoBrowser.m in Sources */,
 				E43F10491D2A0A3A0086E398 /* LGPhotoPickerBrowserPhoto.m in Sources */,
 				E43F104C1D2A0A3A0086E398 /* LGImagePickerSelectView.m in Sources */,
 				E42EB3FF1D265AB700586022 /* AppDelegate.m in Sources */,
 				E43F10171D2A08AB0086E398 /* DACircularProgressView.m in Sources */,
 				E43F10561D2A0A3A0086E398 /* LGPhotoPickerViewController.m in Sources */,
+				E43F11271D2DF1F80086E398 /* MWPhotoBrowser.m in Sources */,
 				E42EB3FC1D265AB700586022 /* main.m in Sources */,
 				E43F10571D2A0A3A0086E398 /* LGPhotoPickerCollectionView.m in Sources */,
 				E43F10551D2A0A3A0086E398 /* LGPhotoPickerGroupViewController.m in Sources */,
 				E43F10BE1D2D16D80086E398 /* SelectPhotoCollectionView.m in Sources */,
 				E43F105B1D2A0A3A0086E398 /* LGPhotoPickerImageView.m in Sources */,
 				E43F105A1D2A0A3A0086E398 /* LGPhotoPickerGroupTableViewCell.m in Sources */,
+				E43F11261D2DF1F80086E398 /* MWPhoto.m in Sources */,
+				E43F112A1D2DF1F80086E398 /* MWZoomingScrollView.m in Sources */,
 				E43F10C41D2D17E70086E398 /* SelectPhotoAssetGridViewController.m in Sources */,
 				E43F104A1D2A0A3A0086E398 /* LGPhotoRect.m in Sources */,
 				E43F104F1D2A0A3A0086E398 /* LGPhotoPickerBrowserPhotoView.m in Sources */,
+				E43F11241D2DF1F80086E398 /* MWGridCell.m in Sources */,
+				E43F11251D2DF1F80086E398 /* MWGridViewController.m in Sources */,
 				E43F10511D2A0A3A0086E398 /* LGPhotoAssets.m in Sources */,
 				E43F10621D2A0AB40086E398 /* UIView+Layout.m in Sources */,
 				E43F10501D2A0A3A0086E398 /* LGPhotoPickerCustomToolBarView.m in Sources */,
 				E43F10B31D2B9C780086E398 /* LSDynamicScrollView.m in Sources */,
 				E43F10591D2A0A3A0086E398 /* LGPhotoPickerFooterCollectionReusableView.m in Sources */,
+				E43F11291D2DF1F80086E398 /* MWTapDetectingView.m in Sources */,
 				E43F10C11D2D17350086E398 /* SelectPhotoCollectionViewCell.m in Sources */,
 				E43F104E1D2A0A3A0086E398 /* LGPhotoPickerBrowserPhotoScrollView.m in Sources */,
+				E43F11231D2DF1F80086E398 /* MWCaptionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
