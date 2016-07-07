@@ -1,0 +1,5 @@
+target 'MyPhoto' do
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'DACircularProgress'
+end

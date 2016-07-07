@@ -15,7 +15,6 @@
 		E42EB40A1D265AB700586022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42EB4081D265AB700586022 /* LaunchScreen.storyboard */; };
 		E42EB4151D265AB800586022 /* MyPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E42EB4141D265AB800586022 /* MyPhotoTests.m */; };
 		E42EB4201D265AB800586022 /* MyPhotoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E42EB41F1D265AB800586022 /* MyPhotoUITests.m */; };
-		E43F10171D2A08AB0086E398 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10161D2A08AB0086E398 /* DACircularProgressView.m */; };
 		E43F10491D2A0A3A0086E398 /* LGPhotoPickerBrowserPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F101E1D2A0A3A0086E398 /* LGPhotoPickerBrowserPhoto.m */; };
 		E43F104A1D2A0A3A0086E398 /* LGPhotoRect.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10201D2A0A3A0086E398 /* LGPhotoRect.m */; };
 		E43F104B1D2A0A3A0086E398 /* LGPhotoPickerBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10231D2A0A3A0086E398 /* LGPhotoPickerBrowserViewController.m */; };
@@ -108,6 +107,7 @@
 		E43F11291D2DF1F80086E398 /* MWTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10FB1D2DF1F80086E398 /* MWTapDetectingView.m */; };
 		E43F112A1D2DF1F80086E398 /* MWZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10FD1D2DF1F80086E398 /* MWZoomingScrollView.m */; };
 		E43F112B1D2DF1F80086E398 /* UIImage+MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E43F10FF1D2DF1F80086E398 /* UIImage+MWPhotoBrowser.m */; };
+		FBDA4EDF8EE68BCC60A78EDB /* libPods-MyPhoto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E4DBC17628B71DE5876B48 /* libPods-MyPhoto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +128,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B21E218510263AF8C4E33D5 /* Pods-MyPhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPhoto.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPhoto/Pods-MyPhoto.release.xcconfig"; sourceTree = "<group>"; };
+		A5E4DBC17628B71DE5876B48 /* libPods-MyPhoto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyPhoto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB99AD84299835605EBD0795 /* Pods-MyPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPhoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPhoto/Pods-MyPhoto.debug.xcconfig"; sourceTree = "<group>"; };
 		E42EB3F71D265AB700586022 /* MyPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42EB3FB1D265AB700586022 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E42EB3FD1D265AB700586022 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -144,8 +147,6 @@
 		E42EB41B1D265AB800586022 /* MyPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42EB41F1D265AB800586022 /* MyPhotoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPhotoUITests.m; sourceTree = "<group>"; };
 		E42EB4211D265AB800586022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E43F10151D2A08AB0086E398 /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
-		E43F10161D2A08AB0086E398 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
 		E43F101D1D2A0A3A0086E398 /* LGPhotoPickerBrowserPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPhotoPickerBrowserPhoto.h; sourceTree = "<group>"; };
 		E43F101E1D2A0A3A0086E398 /* LGPhotoPickerBrowserPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPhotoPickerBrowserPhoto.m; sourceTree = "<group>"; };
 		E43F101F1D2A0A3A0086E398 /* LGPhotoRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPhotoRect.h; sourceTree = "<group>"; };
@@ -283,6 +284,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBDA4EDF8EE68BCC60A78EDB /* libPods-MyPhoto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +305,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34E0A894F8C85AABC0F4AD65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB99AD84299835605EBD0795 /* Pods-MyPhoto.debug.xcconfig */,
+				3B21E218510263AF8C4E33D5 /* Pods-MyPhoto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E42EB3EE1D265AB700586022 = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +321,8 @@
 				E42EB4131D265AB800586022 /* MyPhotoTests */,
 				E42EB41E1D265AB800586022 /* MyPhotoUITests */,
 				E42EB3F81D265AB700586022 /* Products */,
+				34E0A894F8C85AABC0F4AD65 /* Pods */,
+				E8D2707B3882CD3E2899F713 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -335,7 +348,6 @@
 				E43F105E1D2A0AB40086E398 /* Utils */,
 				E43F101B1D2A0A3A0086E398 /* LGPhotoBrowser */,
 				E43F102F1D2A0A3A0086E398 /* LGPhotoPicker */,
-				E43F10141D2A08AB0086E398 /* DACircularProgress */,
 				E42EB3FD1D265AB700586022 /* AppDelegate.h */,
 				E42EB3FE1D265AB700586022 /* AppDelegate.m */,
 				E42EB4001D265AB700586022 /* ViewController.h */,
@@ -373,15 +385,6 @@
 				E42EB4211D265AB800586022 /* Info.plist */,
 			);
 			path = MyPhotoUITests;
-			sourceTree = "<group>";
-		};
-		E43F10141D2A08AB0086E398 /* DACircularProgress */ = {
-			isa = PBXGroup;
-			children = (
-				E43F10151D2A08AB0086E398 /* DACircularProgressView.h */,
-				E43F10161D2A08AB0086E398 /* DACircularProgressView.m */,
-			);
-			path = DACircularProgress;
 			sourceTree = "<group>";
 		};
 		E43F101B1D2A0A3A0086E398 /* LGPhotoBrowser */ = {
@@ -657,6 +660,14 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		E8D2707B3882CD3E2899F713 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5E4DBC17628B71DE5876B48 /* libPods-MyPhoto.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -664,9 +675,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E42EB4241D265AB800586022 /* Build configuration list for PBXNativeTarget "MyPhoto" */;
 			buildPhases = (
+				10BB63E3A779A68DEB2EDE77 /* [CP] Check Pods Manifest.lock */,
 				E42EB3F31D265AB700586022 /* Sources */,
 				E42EB3F41D265AB700586022 /* Frameworks */,
 				E42EB3F51D265AB700586022 /* Resources */,
+				08D34AA4C497C57A24380E33 /* [CP] Embed Pods Frameworks */,
+				F7557C9B19DA0F4998131686 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -841,6 +855,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08D34AA4C497C57A24380E33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPhoto/Pods-MyPhoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10BB63E3A779A68DEB2EDE77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7557C9B19DA0F4998131686 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPhoto/Pods-MyPhoto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E42EB3F31D265AB700586022 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -858,7 +920,6 @@
 				E43F10491D2A0A3A0086E398 /* LGPhotoPickerBrowserPhoto.m in Sources */,
 				E43F104C1D2A0A3A0086E398 /* LGImagePickerSelectView.m in Sources */,
 				E42EB3FF1D265AB700586022 /* AppDelegate.m in Sources */,
-				E43F10171D2A08AB0086E398 /* DACircularProgressView.m in Sources */,
 				E43F10561D2A0A3A0086E398 /* LGPhotoPickerViewController.m in Sources */,
 				E43F11271D2DF1F80086E398 /* MWPhotoBrowser.m in Sources */,
 				E42EB3FC1D265AB700586022 /* main.m in Sources */,
@@ -1023,10 +1084,11 @@
 		};
 		E42EB4251D265AB800586022 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB99AD84299835605EBD0795 /* Pods-MyPhoto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyPhoto/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timelink.MyPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1035,10 +1097,11 @@
 		};
 		E42EB4261D265AB800586022 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B21E218510263AF8C4E33D5 /* Pods-MyPhoto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyPhoto/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timelink.MyPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
